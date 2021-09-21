@@ -1,0 +1,17 @@
+{
+  "name": "wd-bot-base",
+  "version": "1.0.0",
+  "description": "whitesping discord base",
+  "author": "whitesping",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "whitesping",
+    "discord",
+    "bot",
+    "base"
+  ],
+  "dependencies": {
+    "discord.js": "^13.1.0"
+  }
+}

@@ -3,7 +3,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 module.exports = function (config, commands) {
     client.on('ready', () => {
-        console.log(`Logged in as ${client.user.tag}!`);
+        console.log(`${client.user.tag} 켰다!`);
     });
 
     client.on('messageCreate', message => {
@@ -14,7 +14,6 @@ module.exports = function (config, commands) {
         let cmd = args.shift().toLowerCase();
 
         if (commands.get(cmd)) {
-            console.log(Object.prototype.toString.call(commands.get(cmd)));
             if (typeof (commands.get(cmd)) == "string") {
                 message.channel.send(commands.get(cmd));
             }

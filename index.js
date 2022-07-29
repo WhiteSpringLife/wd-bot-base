@@ -28,7 +28,7 @@ module.exports = function (config, commands) {
                     message.channel.send({ embeds: [commands.get(cmd)] })
                 }
                 else {
-                    commands.get(cmd)?.run().then(res => message.channel.send(res));
+                    commands.get(cmd)?.run(message, args).then(res => message.channel.send(res));
                 }
             }
         }
